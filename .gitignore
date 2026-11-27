@@ -1,0 +1,22 @@
+# Power BI Project: local-only files
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+
+# Binaries: publish .pbix as a GitHub Release asset, not in the repo
+*.pbix
+*.abf
+
+# Raw data (size + licenses)
+data/raw/
+*.csv
+*.zip
+*.xlsx
+!**/seed/*.csv
+
+# Secrets / OS
+.env
+*.token
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
